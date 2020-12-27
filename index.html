@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dev List</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="add-dev">
+            <dev class='add-dev__form'>
+                <label for="login">Login:</label>
+                <input required id='login' type="text">
+                <label for="github">Github link:</label>
+                <input required id='github' type="text">
+                <label for="type">User Type:</label>
+                <select id="type">
+                    <option selected="selected" value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <div class="form-btns">
+                    <input class="sumbin" type="submit">
+                    <button class='cancel'>Cancel</button>
+                </div>
+            </dev>
+        </div>
+        <header class="header">
+            <input type="text" class="header__input" placeholder="Enter Login">
+            <button class="header__btn">Add Dev</button>
+        </header>
+        <div class="dev-container">
+
+        </div>
+        <div class="pages"></div>
+    </div>
+    <script src="./script.js" ></script>
+</body>
+</html>

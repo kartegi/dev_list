@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap')
+
+
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+.weapper
+    width: 100%
+    height: 100%
+    position: relative
+    // display: none
+
+.header
+    width: 100%
+    background-color: #7b94bd
+    height: 80px
+    display: flex
+    justify-content: center
+    align-items: center
+    box-shadow: 0px 5px 8px 1px #8f8f8f
+    padding: 0 2rem
+    margin-bottom: 2rem
+    &__input
+        width: 100%
+        max-width: 60vw
+        height: 30px
+        outline: none
+        border: none
+        background-color: #a8bfe6
+        padding: 1rem
+        border-radius: 10px
+        transition: background-color .2s ease-in
+        font-family: 'Roboto', sans-serif
+        font-size: 1rem
+        &:focus
+            background-color: #fff
+            transition: background-color .2s ease-in
+    &__btn
+        margin-left: 1rem
+        height: 30px
+        background: #a8bfe6
+        border: none
+        outline: none
+        max-width: 100px
+        width: 100%
+        border-radius: 10px
+        cursor: pointer
+        color: #ffffff
+        font-family: 'Roboto', sans-serif
+        font-weight: bold
+        font-size: 1rem
+        transition: background .2s ease-in
+        &:hover
+            background: #39e659
+
+.dev-container
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    // margin-bottom: 80px
+
+.dev-card
+    display: flex
+    align-items: center
+    flex-direction: column
+    max-width: 300px
+    width: 100%
+    max-height: 350px
+    height: 100vh
+    margin: 1rem
+    border-radius: 10px
+    box-shadow: 0px 5px 8px 1px #8f8f8f
+    overflow: hidden
+    padding: 0 1rem
+    &__header
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        max-height: 150px
+        height: 100%
+        margin-bottom: 0.5rem
+    &__login
+        margin-bottom: 1.2rem
+        font-family: 'Roboto', sans-serif
+        font-size: 2rem
+        font-weight: bold
+        text-transform: capitalize
+        text-align: center
+        color: #7b94bd
+    &__img
+        object-fit: contain
+        width: 100px
+        border-radius: 50%
+        box-shadow: 0px 5px 8px 1px #8f8f8f
+        object-position: center
+    &__info
+        text-transform: capitalize
+        font-family: 'Roboto', sans-serif
+        white-space: nowrap
+        width: 100%
+        overflow: hidden
+        *:not(:last-child)
+            margin-bottom: 1rem
+    &__link
+        color: #7b94bd
+        text-transform: none
+
+.pages
+    // max-width: 500px
+    width: 100%
+    margin: 40px auto
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    &__link
+        display: flex
+        justify-content: center
+        align-items: center
+        text-decoration: none
+        color: #ffffff
+        background-color: #7b94bd
+        border-radius: 50%
+        width: 2rem
+        height: 2rem
+        margin: 10px 10px
+    .active
+        background-color: #39e659
+
+.add-dev
+    display: none
+    margin: auto
+    position: fixed
+    top: 80px
+    left: 0
+    bottom: 0
+    right: 0
+    max-width: 500px
+    width: 100%
+    height: 100%
+    max-height: 400px
+    z-index: 1
+    background-color: #7b94bd
+    box-shadow: 0px 5px 8px 1px #8f8f8f
+    padding: 0 1rem
+    border-radius: 10px
+    font-family: 'Roboto', sans-serif
+    font-weight: bold
+    font-size: 1rem
+    color: white
+    &__form
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        width: 100%
+        height: 100%
+        input
+            margin-bottom: 1rem
+            width: 100%
+            max-width: 300px
+            border: none
+            outline: none
+            padding: 0.3rem
+            border-radius: 10px
+            &:focus
+                outline: none
+        select
+            margin-bottom: 2rem
+            width: 100%
+            max-width: 300px
+            border-radius: 10px
+            background-color: #fff
+            &:focus
+                outline: none
+                border: none
+        .form-btns
+            display: flex
+            justify-content: space-between
+            width: 100%
+            max-width: 300px
+            input, button
+                color: white
+                width: 100%
+                max-width: 100px
+                border: none
+                outline: none
+                height: 30px
+                cursor: pointer
+                border-radius: 10px
+                font-weight: bold
+                &:focus
+                    outline: none
+            input
+                background-color: #39e659
+            button
+                background-color: #de2f55
+    

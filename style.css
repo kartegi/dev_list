@@ -94,6 +94,7 @@
     box-shadow: 0px 5px 8px 1px #8f8f8f;
     object-position: center; }
   .dev-card__info {
+    text-overflow: ellipsis;
     text-transform: capitalize;
     font-family: "Roboto", sans-serif;
     white-space: nowrap;
